@@ -22,6 +22,15 @@ At home, I monitor the temperature, humidity, gas levels, ozone, air quality, an
 
 Here is your menu of tasty monitoring items, some need devices, add-ons, antennas, sensors and some just some code.   I bounce around between Python, Java, SQL, JavaScript, CSS and Low Code with Apache NiFi.   Pick any 3 for mega monitoring.
 
+It worked in San Francisco....  It can work in Austin.
+
+<img src="https://raw.githubusercontent.com/tspannhw/FLiP-Current22-LetsMonitorAllTheThings/main/2022-08-18_12-09-27_912.jpeg" width="586" height="439">
+
+You do not need some giant cluster to get started.   You can have a Raspberry Pi, a Laptop, a Jetson Nano or some old Linux machine.
+
+![Server](https://user-images.githubusercontent.com/18673814/192906050-1b095050-d599-41dd-8991-b1e5d53e0028.png)
+
+
 
 
 ##### 1️⃣  Air Quality
@@ -39,6 +48,9 @@ This is a REST feed, no extra equipment needed.
 * https://github.com/tspannhw/FLiPN-AirQuality-Checks
 * https://github.com/tspannhw/airquality-datastore
 * https://github.com/tspannhw/airquality-amqp-consumer
+
+![Protocols](https://github.com/tspannhw/FLiP-Current22-LetsMonitorAllTheThings/blob/main/catallthepulsars.jpg?raw=true)
+
 
 ##### 2️⃣  Weather
 
@@ -60,6 +72,7 @@ https://github.com/tspannhw/pulsar-adafruit-funhouse
 <img src="https://raw.githubusercontent.com/tspannhw/pulsar-adafruit-funhouse/main/IMG-6527.jpg" width="300" height="300" />
 
 
+
 ##### 4️⃣ Local Air Quality
 
 With a more powerful Raspberry Pi, I can monitor even more local items.
@@ -67,8 +80,16 @@ With a more powerful Raspberry Pi, I can monitor even more local items.
 * https://github.com/tspannhw/FLiP-Pi-DeltaLake-Thermal
 * https://medium.com/@tspann/apache-pulsar-edge-iot-applications-with-python-for-tvoc-2424a79a8ada
 
+<img src="https://raw.githubusercontent.com/tspannhw/FLiP-Current22-LetsMonitorAllTheThings/main/2022-09-14_10-56-20_079.jpeg" width="586" height="498">
+
 
 ##### 5️⃣  Let's consume all the conference tweets
+
+Maybe we will do one from Apache NiFi to Pulsar if we have the time.
+
+* https://community.cloudera.com/t5/Community-Articles/Parsing-Any-Document-with-Apache-NiFi-1-5-with-Apache-Tika/ta-p/247672
+* https://www.datainmotion.dev/2020/04/streaming-data-with-cloudera-data-flow.html
+
 
 
 ##### 6️⃣  Planes, Trains and Autos.... Actually just planes.
@@ -79,7 +100,6 @@ ADSB-Y transponders from planes can be read with a simple USB adapter and antenn
 * https://github.com/tspannhw/FLiP-Py-ADS-B
 * https://github.com/tspannhw/pulsar-adsb-function
 * https://medium.com/@tspann/tracking-aircraft-in-real-time-with-open-source-554124125011
-
 
 
 #### 7️⃣  Let's Monitor the Electric We Use Today
@@ -95,11 +115,19 @@ Optional:   Apache Spark SQL, Trino, Apache Flink SQL, Pulsar Functions, InfluxD
 ![FriendsAreElectric](https://github.com/tspannhw/FLiP-Py-Energy/blob/main/dashboard.png)
 
 
+
 ##### 8️⃣  We could also monitor with ease:
 
 * Transit Feeds https://github.com/tspannhw/FLiP-Transit
 * Subways, Trains and Buses
 * Live Traffic Cameras
+* Local Cameras
+* Thermal Camera
+* License Plates
+* GPS Data
+* Any data, any time, many protocols, really fast
+
+
 
 ##### 9️⃣ Display Live Streaming Data The Easy Open Source Way
 
@@ -135,3 +163,6 @@ Inside the Current Event 2022 Conference.  Stop by booth G8 to learn more about 
 * https://dzone.com/users/297029/bunkertor.html
 * https://github.com/riferrei/is-using-kop-a-good-idea
 
+### See Me For Some Stickers That Are Both About Data and Cats
+
+![Cats](https://github.com/tspannhw/FLiP-Current22-LetsMonitorAllTheThings/blob/main/dataAndCat.jpg?raw=true)
