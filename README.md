@@ -30,10 +30,15 @@ Let's use the new Spring to read a ton of Air Quality data for the area.  Send t
 This is a REST feed, no extra equipment needed.
 
 * https://github.com/tspannhw/spring-pulsar-airquality
+* https://github.com/tspannhw/airquality
 * https://github.com/tspannhw/airquality-kafka-consumer
 * https://github.com/tspannhw/airquality-mqtt-consumer
 * https://github.com/tspannhw/FLiPN-AirQuality-REST
 * https://medium.com/@tspann/timeplus-plus-pulsar-is-pure-perfection-a1a4d253031f
+* https://github.com/tspannhw/pulsar-airquality-timeplus
+* https://github.com/tspannhw/FLiPN-AirQuality-Checks
+* https://github.com/tspannhw/airquality-datastore
+* https://github.com/tspannhw/airquality-amqp-consumer
 
 ##### 2️⃣  Weather
 
@@ -46,7 +51,6 @@ Let's use Apache NiFi to read all the US weather and sent it to Pulsar.
 
 
 
-
 ##### 3️⃣ Temperature, Barometric Pressure, Humidity Near My Shirt
 
 Let's Monitor Temperature, Barometric Pressure and Humidity very local via small sensor and sent out via MQTT 
@@ -55,11 +59,13 @@ https://github.com/tspannhw/pulsar-adafruit-funhouse
 
 <img src="https://raw.githubusercontent.com/tspannhw/pulsar-adafruit-funhouse/main/IMG-6527.jpg" width="300" height="300" />
 
+
 ##### 4️⃣ Local Air Quality
 
 With a more powerful Raspberry Pi, I can monitor even more local items.
 
-https://github.com/tspannhw/FLiP-Pi-DeltaLake-Thermal
+* https://github.com/tspannhw/FLiP-Pi-DeltaLake-Thermal
+* https://medium.com/@tspann/apache-pulsar-edge-iot-applications-with-python-for-tvoc-2424a79a8ada
 
 
 ##### 5️⃣  Let's consume all the conference tweets
@@ -67,10 +73,14 @@ https://github.com/tspannhw/FLiP-Pi-DeltaLake-Thermal
 
 ##### 6️⃣  Planes, Trains and Autos.... Actually just planes.
 
+ADSB-Y transponders from planes can be read with a simple USB adapter and antenna attached to a Raspberry Pi.
 
 * https://dzone.com/articles/tracking-aircraft-in-real-time-with-apache-pulsar
 * https://github.com/tspannhw/FLiP-Py-ADS-B
 * https://github.com/tspannhw/pulsar-adsb-function
+* https://medium.com/@tspann/tracking-aircraft-in-real-time-with-open-source-554124125011
+
+
 
 #### 7️⃣  Let's Monitor the Electric We Use Today
 
@@ -78,6 +88,7 @@ Required:   HS-110 TP-Link Monitoring Device, Python 3, Apache Pulsar
 Optional:   Apache Spark SQL, Trino, Apache Flink SQL, Pulsar Functions, InfluxDB
 
 * https://github.com/tspannhw/FLiP-Py-Energy
+* https://medium.com/@tspann/lets-monitor-our-own-energy-usage-e8feefd5a3b1
 
 ![EnergizeMe](https://github.com/tspannhw/FLiP-Py-Energy/raw/main/flinkeletricmax.png)
 
@@ -122,4 +133,5 @@ Inside the Current Event 2022 Conference.  Stop by booth G8 to learn more about 
 * https://github.com/tspannhw/FLiPN-DEVNEXUS-2022
 * https://www.flipstack.dev/
 * https://dzone.com/users/297029/bunkertor.html
+* https://github.com/riferrei/is-using-kop-a-good-idea
 
