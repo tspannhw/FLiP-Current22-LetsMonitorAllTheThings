@@ -156,6 +156,24 @@ CREATE CATALOG pulsar WITH (
    'admin-url' = 'http://pulsar1:8080',
    'format' = 'json'
 );
+
+
+select COALESCE(location,station_id,'?') || ' ' || cast(lat as string) || ',' || cast(lon as string) as PlaneLocation, 
+       cast(latitude  as string)|| ',' || cast(longitude as string) as WeatherLocation,
+       COALESCE(flight,'-','-') || ' * ' || COALESCE(hex, '-','-') as FlightNum, 
+       cast(alt_baro  as string) || ' / ' ||  cast(alt_geom as string) as Altitude, 
+       gs as Speed,
+       temperature_string || weather as Weather, 
+       mach, pressure_string, dewpoint_string, heat_index_string, wind_string, baro_rate,
+       NOW() as now
+FROM aircraft /*+ OPTIONS('scan.startup.mode' = 'earliest') */,
+aircraftweather /*+ OPTIONS('scan.startup.mode' = 'earliest') */ 
+WHERE (aircraft.lat > aircraftweather.latitude - 0.1) 
+and (aircraft.lat < aircraftweather.latitude + 0.1)
+and (aircraft.lon < aircraftweather.longitude + 0.1) 
+and (aircraft.lon > aircraftweather.longitude - 0.1);
+
+
 ````
 
 ![SQL](https://github.com/tspannhw/FLiP-Current22-LetsMonitorAllTheThings/blob/main/ghostbusters.jpg?raw=true)
