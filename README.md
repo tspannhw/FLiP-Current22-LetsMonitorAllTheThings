@@ -24,7 +24,10 @@ Here is your menu of tasty monitoring items, some need devices, add-ons, antenna
 
 
 
-##### [1] Let's use the new Spring to read a ton of Air Quality data for the area.  Send to Pulsar via All the Protocols?~!!
+##### 1️⃣  Air Quality
+
+Let's use the new Spring to read a ton of Air Quality data for the area.  Send to Pulsar via All the Protocols?~!!  
+This is a REST feed, no extra equipment needed.
 
 * https://github.com/tspannhw/spring-pulsar-airquality
 * https://github.com/tspannhw/airquality-kafka-consumer
@@ -32,21 +35,29 @@ Here is your menu of tasty monitoring items, some need devices, add-ons, antenna
 * https://github.com/tspannhw/FLiPN-AirQuality-REST
 * https://medium.com/@tspann/timeplus-plus-pulsar-is-pure-perfection-a1a4d253031f
 
-##### Let's use Apache NiFi to read all the US weather and sent to Pulsar.
+##### 2️⃣  Weather
+
+Let's use Apache NiFi to read all the US weather and sent it to Pulsar.
 
 * https://medium.com/@tspann/parsing-weather-feeds-to-add-to-real-time-streams-ec5ecc2849fb
-* https://github.com/tspannhw/FLiP-Pi-Weather
 * https://github.com/tspannhw/pulsar-weather-function
 
+![weather](https://user-images.githubusercontent.com/18673814/192903489-9f15c4cf-4c98-4048-a2d5-b44f6c8e2bf3.png)
 
-##### Let's Monitor Temperature and Humidity via MQTT 
+
+
+
+##### 3️⃣ Temperature, Barometric Pressure, Humidity Near My Shirt
+
+Let's Monitor Temperature, Barometric Pressure and Humidity very local via small sensor and sent out via MQTT 
 
 https://github.com/tspannhw/pulsar-adafruit-funhouse
 
 <img src="https://raw.githubusercontent.com/tspannhw/pulsar-adafruit-funhouse/main/IMG-6527.jpg" width="300" height="300" />
 
 
-##### Let's consume all the conference tweets
+##### [4] Let's consume all the conference tweets
+
 
 ##### Let's monitor all planes nearby
 
@@ -62,6 +73,8 @@ Optional:   Apache Spark SQL, Trino, Apache Flink SQL, Pulsar Functions, InfluxD
 * https://github.com/tspannhw/FLiP-Py-Energy
 
 ![EnergizeMe](https://github.com/tspannhw/FLiP-Py-Energy/raw/main/flinkeletricmax.png)
+
+![FriendsAreElectric](https://github.com/tspannhw/FLiP-Py-Energy/blob/main/dashboard.png)
 
 
 ##### Display Live Streaming Data The Easy Open Source Way
