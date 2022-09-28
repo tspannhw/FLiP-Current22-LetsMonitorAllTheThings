@@ -17,6 +17,8 @@
 
 At home, I monitor the temperature, humidity, gas levels, ozone, air quality, and other features around my desk. Let's bring this to the different spots around the conference including lunch tables, vendor booths, hotel rooms, and more. I need to know about these readings now, not when I get back home from the conference. We need to get these sensor readings immediately in case we need to turn on a fan or move to another area. We will also see if my talk produces a lot of hot air!? My setup is pretty simple, a raspberry pi, a breakout garden sensor mount, and as many sensors as I am willing to fly to Austin. The software stack is Python and Java, Apache Pulsar, MQTT, HTML, JQuery, and Apache Kafka.
 
+![Easy?](https://github.com/tspannhw/FLiP-Current22-LetsMonitorAllTheThings/blob/main/lookatmeter.jpg?raw=true)
+
 
 #### 0️⃣  How to Monitor a Conference (Or Anywhere Really)
 
@@ -101,6 +103,8 @@ ADSB-Y transponders from planes can be read with a simple USB adapter and antenn
 * https://github.com/tspannhw/pulsar-adsb-function
 * https://medium.com/@tspann/tracking-aircraft-in-real-time-with-open-source-554124125011
 
+![Planes](https://github.com/tspannhw/FLiP-Py-ADS-B/raw/main/airmap.png)
+
 
 #### 7️⃣  Let's Monitor the Electric We Use Today
 
@@ -116,7 +120,9 @@ Optional:   Apache Spark SQL, Trino, Apache Flink SQL, Pulsar Functions, InfluxD
 
 
 
-##### 8️⃣  We could also monitor with ease:
+##### 8️⃣  I have also monitored these data sources:
+
+![AllTheThings](https://github.com/tspannhw/FLiP-Current22-LetsMonitorAllTheThings/blob/main/monitorallthethings.jpg?raw=true)
 
 * Transit Feeds https://github.com/tspannhw/FLiP-Transit
 * Subways, Trains and Buses
@@ -125,6 +131,9 @@ Optional:   Apache Spark SQL, Trino, Apache Flink SQL, Pulsar Functions, InfluxD
 * Thermal Camera
 * License Plates
 * GPS Data
+* NFTs
+* BitCoin, Cryptocurrency
+* Stock Data
 * Any data, any time, many protocols, really fast
 
 
@@ -134,6 +143,46 @@ Optional:   Apache Spark SQL, Trino, Apache Flink SQL, Pulsar Functions, InfluxD
 **Required:  WebSockets, Plain HTML, CSS, JavaScript, Apache Pulsar, Topics of Data**
 
 * https://medium.com/@tspann/using-apache-pulsar-websockets-for-real-time-messaging-in-front-end-applications-cf0ac2d80d10
+
+
+#### 1️⃣0️⃣ Join the Streams!!!!
+
+With Flink SQL it's easy.
+
+````
+CREATE CATALOG pulsar WITH (
+   'type' = 'pulsar',
+   'service-url' = 'pulsar://pulsar1:6650',
+   'admin-url' = 'http://pulsar1:8080',
+   'format' = 'json'
+);
+````
+
+![SQL](https://github.com/tspannhw/FLiP-Current22-LetsMonitorAllTheThings/blob/main/ghostbusters.jpg?raw=true)
+
+We can run lots of queries with Pulsar SQL (Trino/Presto) or Spark SQL as well.
+
+![SQL](https://github.com/tspannhw/FLiP-Current22-LetsMonitorAllTheThings/blob/main/queryingpulsar.jpg?raw=true)
+
+You can do a lot of different SQL against Pulsar since we have schemas on our data.
+
+````
+select avg(`current`) as AvgCurrent, 
+       max(voltage) as MaxVoltage,
+       max(`power`) as MaxPower,
+       model
+from electric
+group by model;
+
+select max(alt_baro) as MaxAltitudeFeet, min(alt_baro) as MinAltitudeFeet, avg(alt_baro) as AvgAltitudeFeet,
+       max(alt_geom) as MaxGAltitudeFeet, min(alt_geom) as MinGAltitudeFeet, avg(alt_geom) as AvgGAltitudeFeet,
+       max(gs) as MaxGroundSpeed, min(gs) as MinGroundSpeed, avg(gs) as AvgGroundSpeed, 
+       count(alt_baro) as RowCount, 
+       hex as ICAO, flight as IDENT
+from aircraft 
+group by flight, hex;
+
+````
 
 
 
