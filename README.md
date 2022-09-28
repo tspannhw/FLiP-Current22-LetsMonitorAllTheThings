@@ -54,11 +54,24 @@ https://github.com/tspannhw/pulsar-adafruit-funhouse
 * https://github.com/tspannhw/FLiP-Py-ADS-B
 
 
+#### Let's Monitor the Electric We Use Today
+
+Required:   HS-110 TP-Link Monitoring Device, Python 3, Apache Pulsar
+Optional:   Apache Spark SQL, Trino, Apache Flink SQL, Pulsar Functions, InfluxDB
+
+* https://github.com/tspannhw/FLiP-Py-Energy
+
+![EnergizeMe](https://github.com/tspannhw/FLiP-Py-Energy/raw/main/flinkeletricmax.png)
+
+
 ##### Display Live Streaming Data The Easy Open Source Way
 
 **Required:  WebSockets, Plain HTML, CSS, JavaScript, Apache Pulsar, Topics of Data**
 
 * https://medium.com/@tspann/using-apache-pulsar-websockets-for-real-time-messaging-in-front-end-applications-cf0ac2d80d10
+
+
+
 
 ##
 
