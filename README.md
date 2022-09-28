@@ -20,13 +20,24 @@ At home, I monitor the temperature, humidity, gas levels, ozone, air quality, an
 
 #### How to Monitor a Conference (Or Anywhere Really)
 
-##### Let's use the new Spring to read a ton of Air Quality data for the area.  Send to Pulsar.
+Here is your menu of tasty monitoring items, some need devices, add-ons, antennas, sensors and some just some code.   I bounce around between Python, Java, SQL, JavaScript, CSS and Low Code with Apache NiFi.   Pick any 3 for mega monitoring.
 
-https://github.com/tspannhw/spring-pulsar-airquality
+
+
+##### [1] Let's use the new Spring to read a ton of Air Quality data for the area.  Send to Pulsar via All the Protocols?~!!
+
+* https://github.com/tspannhw/spring-pulsar-airquality
+* https://github.com/tspannhw/airquality-kafka-consumer
+* https://github.com/tspannhw/airquality-mqtt-consumer
+* https://github.com/tspannhw/FLiPN-AirQuality-REST
+* https://medium.com/@tspann/timeplus-plus-pulsar-is-pure-perfection-a1a4d253031f
 
 ##### Let's use Apache NiFi to read all the US weather and sent to Pulsar.
 
-https://medium.com/@tspann/parsing-weather-feeds-to-add-to-real-time-streams-ec5ecc2849fb
+* https://medium.com/@tspann/parsing-weather-feeds-to-add-to-real-time-streams-ec5ecc2849fb
+* https://github.com/tspannhw/FLiP-Pi-Weather
+* https://github.com/tspannhw/pulsar-weather-function
+
 
 ##### Let's Monitor Temperature and Humidity via MQTT 
 
@@ -37,7 +48,17 @@ https://github.com/tspannhw/pulsar-adafruit-funhouse
 
 ##### Let's consume all the conference tweets
 
+##### Let's monitor all planes nearby
 
+* https://dzone.com/articles/tracking-aircraft-in-real-time-with-apache-pulsar
+* https://github.com/tspannhw/FLiP-Py-ADS-B
+
+
+##### Display Live Streaming Data The Easy Open Source Way
+
+**Required:  WebSockets, Plain HTML, CSS, JavaScript, Apache Pulsar, Topics of Data**
+
+* https://medium.com/@tspann/using-apache-pulsar-websockets-for-real-time-messaging-in-front-end-applications-cf0ac2d80d10
 
 ##
 
@@ -57,4 +78,7 @@ Inside the Current Event 2022 Conference.  Stop by booth G8 to learn more about 
 * https://2022.currentevent.io/website/39543/speakers/
 * https://2022.currentevent.io/website/39543/agenda/
 * https://github.com/tspannhw/FLiPStackWeekly
+* https://github.com/tspannhw/FLiPN-DEVNEXUS-2022
+* https://www.flipstack.dev/
+* https://dzone.com/users/297029/bunkertor.html
 
