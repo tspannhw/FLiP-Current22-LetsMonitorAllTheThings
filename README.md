@@ -54,12 +54,14 @@ This is a REST feed, no extra equipment needed.
 ![Protocols](https://github.com/tspannhw/FLiP-Current22-LetsMonitorAllTheThings/blob/main/catallthepulsars.jpg?raw=true)
 
 
+
 ##### 2️⃣  Weather
 
 Let's use Apache NiFi to read all the US weather and sent it to Pulsar.
 
 * https://medium.com/@tspann/parsing-weather-feeds-to-add-to-real-time-streams-ec5ecc2849fb
 * https://github.com/tspannhw/pulsar-weather-function
+* https://www.youtube.com/watch?v=2PO15zb7irg
 
 ![weather](https://user-images.githubusercontent.com/18673814/192903489-9f15c4cf-4c98-4048-a2d5-b44f6c8e2bf3.png)
 
@@ -75,6 +77,7 @@ https://github.com/tspannhw/pulsar-adafruit-funhouse
 
 
 
+
 ##### 4️⃣ Local Air Quality
 
 With a more powerful Raspberry Pi, I can monitor even more local items.
@@ -85,12 +88,16 @@ With a more powerful Raspberry Pi, I can monitor even more local items.
 <img src="https://raw.githubusercontent.com/tspannhw/FLiP-Current22-LetsMonitorAllTheThings/main/2022-09-14_10-56-20_079.jpeg" width="586" height="498">
 
 
+
+
 ##### 5️⃣  Let's consume all the conference tweets
 
 Maybe we will do one from Apache NiFi to Pulsar if we have the time.
 
 * https://community.cloudera.com/t5/Community-Articles/Parsing-Any-Document-with-Apache-NiFi-1-5-with-Apache-Tika/ta-p/247672
 * https://www.datainmotion.dev/2020/04/streaming-data-with-cloudera-data-flow.html
+
+Twitter Terms:    #Current22 #datastreaming #ApachePulsar #ApacheKafka #ApacheFlink 
 
 
 
@@ -106,6 +113,7 @@ ADSB-Y transponders from planes can be read with a simple USB adapter and antenn
 ![Planes](https://github.com/tspannhw/FLiP-Py-ADS-B/raw/main/airmap.png)
 
 
+
 #### 7️⃣  Let's Monitor the Electric We Use Today
 
 Required:   HS-110 TP-Link Monitoring Device, Python 3, Apache Pulsar
@@ -117,6 +125,7 @@ Optional:   Apache Spark SQL, Trino, Apache Flink SQL, Pulsar Functions, InfluxD
 ![EnergizeMe](https://github.com/tspannhw/FLiP-Py-Energy/raw/main/flinkeletricmax.png)
 
 ![FriendsAreElectric](https://github.com/tspannhw/FLiP-Py-Energy/blob/main/dashboard.png)
+
 
 
 
@@ -145,9 +154,14 @@ Optional:   Apache Spark SQL, Trino, Apache Flink SQL, Pulsar Functions, InfluxD
 * https://medium.com/@tspann/using-apache-pulsar-websockets-for-real-time-messaging-in-front-end-applications-cf0ac2d80d10
 
 
+
 #### 1️⃣0️⃣ Join the Streams!!!!
 
 With Flink SQL it's easy.
+
+* https://github.com/tspannhw/FLiP-Py-ADS-B/blob/main/join.md
+* https://github.com/tspannhw/pulsar-weather-function
+
 
 ````
 CREATE CATALOG pulsar WITH (
