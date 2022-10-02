@@ -92,12 +92,19 @@ With a more powerful Raspberry Pi, I can monitor even more local items.
 
 ##### 5️⃣  Let's consume all the conference tweets
 
-Maybe we will do one from Apache NiFi to Pulsar if we have the time.
+I am looking at the new Twitter Java SDK v2 to sent to pulsar.
 
 * https://community.cloudera.com/t5/Community-Articles/Parsing-Any-Document-with-Apache-NiFi-1-5-with-Apache-Tika/ta-p/247672
 * https://www.datainmotion.dev/2020/04/streaming-data-with-cloudera-data-flow.html
 
-Twitter Terms:    #Current22 #datastreaming #ApachePulsar #ApacheKafka #ApacheFlink 
+Twitter Terms:    #Current22 #KafkaSummit
+
+````
+Twitter API v2 - setup a rule
+
+curl "https://api.twitter.com/2/tweets/search/stream/rules" -H "Authorization: Bearer $BEARER_TOKEN"
+{"data":[{"id":"1575560079515983872","value":" #kafkasummit OR #current22  OR retweets_of:PaasDev","tag":"conferencetags"}],"meta":{"sent":"2022-09-30T16:13:12.528Z","result_count":1}}
+
 
 
 
