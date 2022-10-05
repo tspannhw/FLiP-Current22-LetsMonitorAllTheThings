@@ -104,7 +104,7 @@ Twitter API v2 - setup a rule
 
 curl "https://api.twitter.com/2/tweets/search/stream/rules" -H "Authorization: Bearer $BEARER_TOKEN"
 {"data":[{"id":"1575560079515983872","value":" #kafkasummit OR #current22  OR retweets_of:PaasDev","tag":"conferencetags"}],"meta":{"sent":"2022-09-30T16:13:12.528Z","result_count":1}}
-
+````
 
 
 
