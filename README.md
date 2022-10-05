@@ -178,6 +178,9 @@ CREATE CATALOG pulsar WITH (
    'format' = 'json'
 );
 
+USE catalog pulsar;
+
+set table.dynamic-table-options.enabled = true;
 
 select COALESCE(location,station_id,'?') || ' ' || cast(lat as string) || ',' || cast(lon as string) as PlaneLocation, 
        cast(latitude  as string)|| ',' || cast(longitude as string) as WeatherLocation,
